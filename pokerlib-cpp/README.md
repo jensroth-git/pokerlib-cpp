@@ -193,7 +193,7 @@ interface PlayerResults {
 ### Building from Source
 
 ```bash
-git clone https://github.com/yourusername/pokerlib-cpp.git
+git clone https://github.com/jensroth-git/pokerlib-cpp.git
 cd pokerlib-cpp
 npm install
 npm run build
