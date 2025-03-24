@@ -220,12 +220,8 @@ int main() {
     std::cout << "Category: " << static_cast<int>(desc.GetCategory()) << std::endl;
     std::cout << "Description: " << desc.to_string() << std::endl;
     
-    // Find the best 5 cards
-    std::vector<pokerlib::Card> all_cards;
-    all_cards.insert(all_cards.end(), hand_cards.begin(), hand_cards.end());
-    all_cards.insert(all_cards.end(), board_cards.begin(), board_cards.end());
-    
-    auto best_five = pokerlib::GetFiveBestCards(all_cards);
+    // Find the best 5 cards    
+    auto best_five = pokerlib::GetFiveBestCards(combined_cards);
     
     std::cout << "Best five cards: ";
     for (const auto& card : best_five) {
