@@ -51,8 +51,12 @@ int main() {
     // Combine cards for evaluation
     auto all_cards = pokerlib::Card::CombineCards(holecards, board);
     
+    // Get the combined hand
+    auto combined_cards = pokerlib::Card::CombineCards(hand_cards, board_cards);
+    auto combined_hand = pokerlib::Card::CreateHand(combined_cards);
+    
     // Evaluate the hand
-    uint16_t eval = pokerlib::GetHandEvaluation(all_cards);
+    uint16_t eval = pokerlib::GetHandEvaluation(combined_hand);
     
     // Get a human-readable description
     auto desc = pokerlib::HandDescriptionProvider::GetDescription(eval);
@@ -100,20 +104,16 @@ auto cards = pokerlib::Card::GetCards("AhKs");
 // Returns vector of Card objects
 ```
 
-#### `Card::CombineCards(std::vector<Card> cards)`
-
-Combines multiple cards into a hand object for evaluation.
-
-```cpp
-auto hand = pokerlib::Card::CombineCards(cards);
-```
+Combines multiple cards for creating a hand object to be evaluated.
 
 #### `Card::CombineCards(const std::vector<Card>& firstVector, const Vectors&... restVectors)`
 
 Variadic template to combine multiple card vectors efficiently.
 
 ```cpp
-auto hand = pokerlib::Card::CombineCards(holecards, board);
+auto all_cards = pokerlib::Card::CombineCards(holecards, board);
+
+auto hand = pokerlib::Card::CreateHand(all_cards);
 ```
 
 ### Hand Evaluation
