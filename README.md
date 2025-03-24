@@ -204,9 +204,10 @@ int main() {
     auto hand_cards = pokerlib::Card::GetCards(hand_str);
     auto board_cards = pokerlib::Card::GetCards(board_str);
     
-    // Combine all cards using the variadic template method
-    auto combined_hand = pokerlib::Card::CombineCards(hand_cards, board_cards);
-    
+    // Get the combined hand
+    auto combined_cards = pokerlib::Card::CombineCards(hand_cards, board_cards);
+    auto combined_hand = pokerlib::Card::CreateHand(combined_cards);
+
     // Evaluate the hand
     uint16_t eval = pokerlib::GetHandEvaluation(combined_hand);
     
