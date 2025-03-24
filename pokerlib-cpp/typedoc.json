@@ -1,0 +1,15 @@
+{
+  "entryPoints": ["./src/index.ts"],
+  "out": "docs",
+  "name": "PokerLib API Documentation",
+  "includeVersion": true,
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "theme": "default",
+  "categorizeByGroup": true,
+  "categoryOrder": ["Main", "Types", "*"],
+  "readme": "README.md",
+  "plugin": ["typedoc-plugin-markdown"],
+  "githubPages": true
+} 

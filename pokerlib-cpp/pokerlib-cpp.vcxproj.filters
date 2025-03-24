@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="pokerlib">
+      <UniqueIdentifier>{dae604d4-0524-4269-9d5e-758fc7ace400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pokerlib\include">
+      <UniqueIdentifier>{8d454fb9-7db2-4007-a28c-f0fec5a689a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="omp">
+      <UniqueIdentifier>{3c86e035-7d56-4d79-bf58-f37f71955506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="omp\include">
+      <UniqueIdentifier>{ec3d4518-8a47-48cc-be0d-edb121474f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libdivide">
+      <UniqueIdentifier>{6238535e-a6b4-47ad-a656-cdad1a88d37a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples">
+      <UniqueIdentifier>{a3993b7f-13a6-46b1-a688-dcc50cdd2141}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="omp\CardRange.cpp">
+      <Filter>omp</Filter>
+    </ClCompile>
+    <ClCompile Include="omp\CombinedRange.cpp">
+      <Filter>omp</Filter>
+    </ClCompile>
+    <ClCompile Include="omp\EquityCalculator.cpp">
+      <Filter>omp</Filter>
+    </ClCompile>
+    <ClCompile Include="omp\HandEvaluator.cpp">
+      <Filter>omp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Card.cpp">
+      <Filter>pokerlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Deck.cpp">
+      <Filter>pokerlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Evaluator.cpp">
+      <Filter>pokerlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HandDescription.cpp">
+      <Filter>pokerlib</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\equity_calculator.cpp">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\hand_description.cpp">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libdivide\libdivide.h">
+      <Filter>libdivide</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\CardRange.h">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\CombinedRange.h">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\Constants.h">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\EquityCalculator.h">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\Hand.h">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\HandEvaluator.h">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\OffsetTable.hxx">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\Random.h">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="omp\Util.h">
+      <Filter>omp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pokerlib\Deck.h">
+      <Filter>pokerlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pokerlib\Evaluator.h">
+      <Filter>pokerlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pokerlib\HandDescription.h">
+      <Filter>pokerlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pokerlib\PokerLib.h">
+      <Filter>pokerlib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pokerlib\Card.h">
+      <Filter>pokerlib\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
