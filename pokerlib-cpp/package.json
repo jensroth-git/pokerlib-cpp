@@ -1,6 +1,6 @@
 {
   "name": "pokerlib-cpp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "C++ poker hand evaluation library for Node.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,6 +20,7 @@
     "src",
     "omp",
     "include",
+    "libdivide",
     "binding.gyp",
     "README.md"
   ],
@@ -31,7 +32,7 @@
     "hand",
     "analysis"
   ],
-  "author": "",
+  "author": "Jens Roth",
   "license": "MIT",
   "dependencies": {
     "bindings": "^1.5.0",
@@ -54,5 +55,17 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "gypfile": true
+  "gypfile": true,
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensroth-git/pokerlib-cpp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jensroth-git/pokerlib-cpp/issues"
+  },
+  "homepage": "https://github.com/jensroth-git/pokerlib-cpp#readme"
 }

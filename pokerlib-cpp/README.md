@@ -33,8 +33,9 @@ npm install pokerlib-cpp
 import { PokerLib } from 'pokerlib-cpp';
 
 // Evaluate a hand
-const result = PokerLib.evaluateHand('AhKhQhJhTh');
-console.log(`Hand: ${result.description.description}`); // "royal flush"
+const result = PokerLib.evaluateHand('AcAsAdQcQd');
+console.log(`Hand: ${result.description.categoryName}`); // Full House
+console.log(`Human readable: ${result.description.description}`); // full house, aces full of queens
 
 // Calculate equity between hands
 const hands = ['AhKh', 'QsQc'];
@@ -43,16 +44,12 @@ const results = PokerLib.calculateEquity(hands, board);
 
 // Show equity for each hand
 hands.forEach((hand, i) => {
-  console.log(`${hand}: ${(results[i].equityPercentage * 100).toFixed(2)}% equity`);
+    console.log(`${hand} is ${results[i].winStatus}`);
+    console.log(`${hand}: ${(results[i].equityPercentage * 100).toFixed(2)}% equity`);
+    console.log(`Winning outs: ${results[i].winningOuts.map(card => card.string).join(', ')}`);
+    console.log(`Tying outs: ${results[i].tyingOuts.map(card => card.string).join(', ')}`);
+    console.log(` `);
 });
-
-// Check if a hand is currently winning
-const isWinning = PokerLib.isWinning('AhKh', ['QsQc', '7d7s'], '8s9cTd');
-console.log(`AhKh is winning: ${isWinning}`);
-
-// Get winning outs
-const outs = PokerLib.getWinningOuts('AhKh', ['QsQc'], '8s9cTd');
-console.log(`Winning outs: ${outs.map(card => card.string).join(', ')}`);
 ```
 
 ## Card Notation

@@ -28,6 +28,8 @@ pokerlib-cpp/
 │   ├── equity_calculator.cpp  # Equity calculation example
 │   └── hand_description.cpp   # Hand description example
 ├── omp/                       # Original OMPEval library (dependency)
+├── libdivide/                 # Libdivide library (dependency for fast division)
+│   └── libdivide.h            # High-performance integer division
 ├── binding.gyp                # Node-gyp build configuration
 ├── README.md                  # Project documentation
 └── LIBRARY_STRUCTURE.md       # This file
