@@ -24,7 +24,7 @@ npm install pokerlib-cpp
 ## Requirements
 
 - Node.js 14.x or later
-- Python (required by node-gyp for building the native module)
+- Python 3.x with setuptools installed (`pip3 install setuptools`)
 - C++ build tools (Visual Studio on Windows, XCode on macOS, GCC on Linux)
 
 ## Quick Start
